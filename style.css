@@ -1,12 +1,94 @@
 * {
   box-sizing: border-box;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+}
+
+:root {
+  --color-grey-300: hsl(0deg, 0%, 60%);
+  --color-grey-500: hsl(0deg, 0%, 40%);
+  --color-grey-700: hsl(0deg, 0%, 30%);
+  --color-grey-900: hsl(0deg, 0%, 10%);
+
+  --color-black: hsl(0deg, 0%, 0%);
+  --color-white: hsl(0deg, 0%, 1000%);
+
+  --color-green: hsl(160deg, 100%, 30%);
+
+  --color-gold-500: hsl(45deg, 100%, 50%);
+  --color-gold-700: hsl(45deg, 100%, 40%);
 }
 
 html,
 body {
+  height: 100%;
   margin: 0;
   padding: 0;
 }
 
-/* Add styles here! */
+p {
+  color: var(--color-grey-900);
+}
+
+header {
+  padding: 64px 0 32px;
+  border-bottom: 8px solid var(--color-grey-500);
+}
+
+header h1 {
+  margin-bottom: 64px;
+
+  font-size: 2rem;
+}
+
+header p {
+  margin-bottom: 32px;
+
+  font-size: 1.25rem;
+}
+
+header p strong {
+  font-size: 1.25rem;
+  color: var(--color-green);
+}
+
+.max-width-wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.intro-chunk {
+  max-width: 400px;
+  padding: 0 32px;
+}
+
+main {
+  padding: 96px 0;
+
+  background-color: var(--color-grey-300);
+}
+
+main .max-width-wrapper {
+  background-color: var(--color-white);
+}
+
+.card {
+  padding: 32px;
+  border-bottom: 8px solid var(--color-grey-500);
+}
+
+.card h2 {
+  width: fit-content;
+  padding: 16px 48px;
+  margin-top: -24px;
+  margin-left: -48px;
+  border-bottom: 8px solid var(--color-gold-700);
+
+  font-size: 1.5rem;
+  background-color: var(--color-gold-500);
+}
+
+.card p,
+.card em {
+  font-size: 1.25rem;
+}
